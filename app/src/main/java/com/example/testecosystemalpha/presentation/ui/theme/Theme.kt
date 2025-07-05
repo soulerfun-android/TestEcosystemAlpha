@@ -1,4 +1,4 @@
-package com.example.testecosystemalpha.ui.theme
+package com.example.testecosystemalpha.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

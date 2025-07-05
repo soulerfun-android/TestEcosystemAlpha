@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestEcosystemAlpha</string>
+    <string name="info">Поиск</string>
+    <string name="all_info">База данных</string>
 </resources>

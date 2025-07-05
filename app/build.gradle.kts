@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
 }
 
 android {
@@ -56,4 +57,24 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation(libs.converter.gson.v290)
+
+
+    // Навигация для Jetpack Compose
+    implementation("androidx.navigation:navigation-compose:2.9.0")
+
+    // dagger 2
+    implementation("com.google.dagger:dagger:2.55")
+    kapt("com.google.dagger:dagger-compiler:2.55")
+
+    // room
+    implementation("androidx.room:room-runtime:2.7.2")
+    kapt("androidx.room:room-compiler:2.7.2")
+    implementation("androidx.room:room-ktx:2.7.2")
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.1")
+    kapt("androidx.lifecycle:lifecycle-compiler:2.9.1")
 }
